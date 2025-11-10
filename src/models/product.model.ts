@@ -62,8 +62,6 @@ const ProductSchema = new Schema(
   }
 );
 
-ProductSchema.index({ name: 1 });
-ProductSchema.index({ category: 1 });
 
 const Product = models.Product || model("Product", ProductSchema);
 export default Product;

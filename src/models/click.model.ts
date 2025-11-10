@@ -40,10 +40,5 @@ const ClickSchema = new Schema(
   }
 );
 
-ClickSchema.index({ affiliate: 1, clickDate: -1 });
-ClickSchema.index({ product: 1 });
-ClickSchema.index({ ipAddress: 1 });
-ClickSchema.index({ isConverted: 1 });
-
 const Click = models.Click || model("Click", ClickSchema);
 export default Click;

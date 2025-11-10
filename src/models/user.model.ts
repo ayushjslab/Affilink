@@ -62,10 +62,6 @@ const UserSchema = new Schema(
   }
 );
 
-UserSchema.index({ email: 1 });
-UserSchema.index({ affiliateCode: 1 });
-UserSchema.index({ referredBy: 1 });
-
 
 const User = models.User || model("User", UserSchema);
 

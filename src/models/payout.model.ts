@@ -50,8 +50,6 @@ const PayoutSchema = new Schema(
   }
 );
 
-PayoutSchema.index({ affiliate: 1, createdAt: -1 });
-PayoutSchema.index({ status: 1 });
 
 const Payout = models.Payout || model("Payout", PayoutSchema);
 export default Payout;

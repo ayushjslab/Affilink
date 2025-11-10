@@ -62,9 +62,6 @@ const ConversionSchema = new Schema(
   }
 );
 
-ConversionSchema.index({ affiliate: 1, createdAt: -1 });
-ConversionSchema.index({ product: 1 });
-ConversionSchema.index({ status: 1 });
 
 const Conversion = models.Conversion || model("Conversion", ConversionSchema);
 export default Conversion;
